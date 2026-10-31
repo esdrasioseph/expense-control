@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body{
+    background-color: #013e41;
+}
+
+header{
+    animation: slideInFromLeft 1.4s ease-out forwards;
+}
+
+.container {
+    max-width: 57.2rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+label {
+    font-family: "Asap Sharp", sans-serif;
+    color: white;
+}
+
+input {
+    font-family: 'Asap Sharp';
+    background-color: rgb(34,36,42);
+    color: white;
+    border: none;
+    border-radius: 0.05;
+}
+
+select {
+    font-family: 'Asap Sharp';
+    color: white;
+    background-color: rgb(34,36,42);
+}
+
+h1 {
+    padding-top: 1.5rem;
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+h1, h2{
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 400;
+   color: rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    align-items: flex-start;
+}
+
+
+#transactions-register, #transaction-history{
+    flex: 1;
+    max-width: 28rem;
+    border: 0.005rem solid;
+    border-radius: 0.8rem;
+    animation: slideInFromLeft 1.4s ease-out forwards;
+    
+}
+
+#transactions-register{
+    opacity: 0.95;
+    background-color: rgba(37,83,70, 0.2);
+    padding: 1.8rem;
+}
+
+#transaction-history{
+    opacity: 0.95;
+    background-color: rgba(68, 110, 96, 0.3);
+    padding: 1.8rem;
+}
+
+#transaction-type, #transaction-value, #transaction-name {
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+#transaction-type{
+    border: none;
+    cursor: pointer;
+}
+
+#myBtn {
+    font-family: 'Titillium Web';
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #3cc1b0;
+    border: 0;
+}
+
+#myBtn:hover {
+    background-color: rgb(101, 195, 183);
+}
+
+.input-box{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-title, #history-title{
+    margin-bottom: 1.8rem;
+}
+
+.transactions-name{
+    font-family: 'Asap Sharp';
+    color: rgb(233, 227, 227);
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.expenses{
+    color: rgb(233, 34, 34);
+    font-family: 'Asap Sharp';
+    margin-bottom: 0.5rem;
+    font-size: medium;
+}
+
+.transaction-value{
+    color: rgba(9, 252, 123, 0.61);
+    font-family: 'Asap Sharp';
+    margin-bottom: 0.5rem;
+    font-size: medium;
+}
+
+.pencil-button, .xmark-button{
+    color: rgb(10, 24, 24);
+    margin-left: 0.2rem;
+    cursor: pointer;
+    padding: 0.15rem;
+    background-color: rgb(21,75,74);
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.pencil-button:hover{
+    color: rgb(53, 161, 161);
+}
+
+ .xmark-button:hover {
+    color: rgb(231, 62, 62);
+ }
+
+
+dialog {
+    opacity: 0.95;
+    backdrop-filter: blur(10px);
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(46, 148, 146, 0.5);
+    border: 0.010rem solid;
+    border-radius: 0.8rem;
+    width: 25%;
+}
+
+dialog > h2{
+    margin-bottom: 1.8rem;
+}
+
+dialog  select{
+    font-family: 'Asap Sharp';
+    padding: 0.35rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+dialog  label {
+    margin-bottom: 0.5rem;
+}
+
+dialog  input {
+    font-family: 'Asap Sharp';
+    padding: 0.35rem;
+    color: white;
+    border-radius: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#close-button{
+    position: absolute;
+    top: 0.05rem;
+    right: 0rem;
+    padding: 0.6rem;
+    width: 2.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: rgb(240, 51, 64);
+    color: white;
+}
+
+#close-button:hover{
+    background-color: rgb(240, 74, 85);
+}
+
+#changeBtn{
+    font-family: 'Titillium Web';
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #3cc1b0;
+    border: 0;
+}
+
+#changeBtn:hover{
+    background-color: rgb(101, 195, 183);
+}
+
+.balance-value{
+    color: rgba(9, 252, 123, 0.61);
+    font-family: "Titillium Web", sans-serif;
+    display: inline;
+    margin-left: 0.5rem;
+    font-weight: 400;
+    font-size: 1.45rem;
+}
+
+.debt{
+    color: rgb(233, 34, 34);
+    font-family: "Titillium Web", sans-serif;
+    display: inline;
+    margin-left: 0.5rem;
+    font-weight: 400;
+    font-size: 1.45rem;
+}

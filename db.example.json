@@ -1,0 +1,16 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "name": "Salário Mensal",
+      "value": "3000.00",
+      "type": "entrada"
+    },
+    {
+      "id": "2",
+      "name": "Aluguel",
+      "value": "1200.00",
+      "type": "gasto"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos Pessoais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/89e857d729.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Controle de Gastos Pessoais</h1>
+            <h2 id="total-balance">Saldo Total:</h2>
+        </header>
+
+        <main>
+
+            <div id="transactions-register">
+                <form id="myForm">
+                    <h2 id="register-title">Registro de Transações</h2>
+
+                    <div class="input-box">
+                        <label for="transaction-type">Tipo de Transação:</label>
+                        <select name="transaction-select" id="transaction-type" required>
+                            <option value="gasto" selected>Gasto</option>
+                            <option value="entrada">Entrada</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="transaction-name">Nome da Transação:</label>
+                        <input type="text" id="transaction-name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="transaction-value">Valor da Transação (R$):</label>
+                        <input id="transaction-value" type="text" inputmode="numeric" placeholder="Ex.: 1500.00"
+                            required>
+                    </div>
+
+                    <button id="myBtn">Salvar</button>
+                </form>
+            </div>
+
+            <div id="transaction-history">
+                <h2 id="history-title">Histórico de Transações</h2>
+                <section id="transactions"></section>
+            </div>
+
+        </main>
+    </div>
+
+    <dialog id="myModal">
+        <h2>Editar Transação</h2>
+
+        <form id="changeForm" data-id="">
+           
+            <div class="input-box">
+                <label for="change-type">Tipo:</label>
+                <select id="change-type" required>
+                    <option value="gasto" selected>Gasto</option>
+                    <option value="entrada">Entrada</option>
+                </select>
+            </div>
+
+
+            <div class="input-box">
+                <label for="changeName">Nome:</label>
+                <input type="text" id="changeName" required>
+            </div>
+
+            <div class="input-box">
+                <label for="changeValue">Valor:</label>
+                <input type="text" id="changeValue" inputmode="numeric" required>
+            </div>
+
+            <button id="changeBtn">Salvar</button>
+        </form>
+
+        <form method="dialog">
+            <button id="close-button">X</button>
+        </form>
+
+    </dialog>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
