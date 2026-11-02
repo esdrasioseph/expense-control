@@ -19,7 +19,7 @@ Desenvolvido artesanalmente com **JavaScript Puro (Vanilla)** e **ES Modules**, 
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **HTML5 Semântico:** Estruturação acessível, uso da API nativa `<dialog>` e `<header>/<main>/<article>`.
+* **HTML5 Semântico:** Estruturação acessível, uso da API nativa `<dialog>` e `<header>/<main>/<section>`.
 * **CSS3 Moderno:** Flexbox layout, variáveis, pseudo-elementos, *backdrop-filter* (efeito de vidro) e animações `@keyframes`.
 * **JavaScript ES6+ (Vanilla):** 
   * Arquitetura modular com **ES Modules** (`import` / `export` nativo).
@@ -96,5 +96,5 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em seu computado
 
 ---
 
-Feito com dedicação e código artesanal por [Esdras Ioseph](https://github.com/esdrasioseph). 🚀
+Feito com dedicação e código artesanal por [Esdras Ioseph](https://github.com/esdrasioseph). 
 
