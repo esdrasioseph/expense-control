@@ -5,6 +5,8 @@ Uma aplicação web intuitiva, moderna e responsiva para gestão financeira pess
 Desenvolvido artesanalmente com **JavaScript Puro (Vanilla)** e **ES Modules**, priorizando o domínio profundo dos fundamentos da web, manipulação de DOM e consumo de APIs RESTful sem depender de frameworks.
 
 ---
+![Demonstração do Controle de Gastos](assets/demo.gif)
+---
 
 ## ✨ Funcionalidades Principais
 
