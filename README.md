@@ -35,17 +35,21 @@ Desenvolvido artesanalmente com **JavaScript Puro (Vanilla)** e **ES Modules**, 
 
 ## 📂 Estrutura do Projeto
 
-O código foi desacoplado em módulos independentes seguindo o princípio da responsabilidade única:
+O código foi desacoplado em módulos independentes e organizado separando os arquivos públicos e ativos estáticos da raiz do projeto:
 
 ```text
-├── index.html            # Estrutura semântica e template do modal
-├── style.css             # Folha de estilos, paleta de cores e animações
-├── index.js              # Ponto de entrada, escuta de formulários e inicialização
-├── fetchTransactions.js  # Módulo de requisição inicial e cálculo de saldo
-├── showTransaction.js   # Módulo responsável por renderizar cada card no DOM
-├── formatter.js          # Módulo centralizado de formatação de moedas (BRL)
+├── assets/
+│   └── demo.gif          # Demonstração visual do funcionamento da aplicação
+├── public/
+│   ├── index.html        # Estrutura semântica e template do modal
+│   ├── style.css         # Folha de estilos, paleta de cores e animações
+│   ├── index.js          # Ponto de entrada e escuta de eventos dos formulários
+│   ├── fetchTransactions.js # Módulo de requisição inicial e cálculo de saldo
+│   ├── showTransaction.js   # Módulo responsável por renderizar cada card no DOM
+│   └── formatter.js      # Módulo centralizado de formatação de moedas (BRL)
 ├── db.example.json       # Modelo de dados fictícios para inicialização
 ├── package.json          # Gerenciador de dependências e scripts de execução
+├── package-lock.json     # Bloqueio de versões exatas das dependências
 └── .gitignore            # Proteção de arquivos locais e pastas pesadas
 ```
 
@@ -86,7 +90,7 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em seu computado
    *O servidor estará rodando em `http://localhost:3000`.*
 
 5. **Abra o projeto no navegador:**
-   * Basta abrir o arquivo `index.html` utilizando a extensão **Live Server** do VS Code (ou qualquer servidor estático local).
+   * Basta abrir o arquivo `public/index.html` utilizando a extensão **Live Server** do VS Code (ou qualquer servidor estático local).
 
 ---
 
